@@ -1,0 +1,60 @@
+# ============================================================
+#  DATA PROTECTION: never commit real research data publicly
+# ============================================================
+# Raw and personal data (survey responses, interviews, etc.)
+data/raw/
+data/private/
+**/raw-data/
+**/confidential/
+
+# Statistical software data files (SPSS, Stata, SAS, SmartPLS projects)
+*.sav
+*.zsav
+*.por
+*.dta
+*.sas7bdat
+*.splsm
+*.splsp
+
+# Excel and CSV exports of real data. Synthetic/demo data can be kept
+# by placing it inside a folder named "synthetic/" (allowed below).
+*.xlsx
+*.xls
+*.csv
+!**/synthetic/*.csv
+!**/sample-data/*.csv
+
+# Unpublished manuscripts and drafts
+manuscripts/
+drafts/
+*.docx
+*_draft.*
+*_DRAFT.*
+
+# ============================================================
+#  SECRETS
+# ============================================================
+.env
+*.key
+credentials*.json
+
+# ============================================================
+#  PYTHON / R / JUPYTER
+# ============================================================
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+
+# ============================================================
+#  OS / EDITOR
+# ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*
